@@ -20,19 +20,18 @@ console.log(producto1);*/
   
 
 class Producto{
-    constructor(nombre, precio, cantidad){
-      this.nombre = nombre;
-      this.precio = precio;
-      this.cantidad = cantidad;
-    }
-  
-    vender(){
-      this.cantidad = this.cantidad - 1;
-    }
+  constructor(nombre, precio, cantidad){
+    this.nombre = nombre;
+    this.precio = precio;
+    this.cantidad = cantidad;
   }
-  
-  const producto1 = new Producto("monitor", 10000, 5);
-  console.log(producto1);
-  producto1.vender();
-  console.log(producto1);
-  
+
+  vender(){
+    this.cantidad = this.cantidad - 1;
+  }
+}
+
+const producto1 = new Producto("monitor", 10000, 5);
+console.log(producto1);
+producto1.vender();
+console.log(producto1);
