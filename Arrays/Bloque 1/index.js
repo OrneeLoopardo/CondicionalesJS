@@ -25,7 +25,7 @@ nombres.shift(); //SHIFT saca el primer elemento
 console.log(nombres);*/
 
 /*const nombres = ["ornella", "martin", "andres", "marlon", "lucas", "matias"];
-nombres.splice(2, 1); //SPLICE elimina elementos del arreglo (desde donde, haasta  donde)
+nombres.splice(2, 1); //SPLICE elimina elementos del arreglo (desde donde, hasta  donde)
 console.log(nombres);*/
 
 /*const nombres = ["ornella", "martin", "andres", "marlon", "lucas", "matias"];
