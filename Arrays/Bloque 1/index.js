@@ -7,7 +7,7 @@ const varios = [ 1, true, "casa"]*/
 /*console.log(nombres[2] + nombres[3]);
 console.log(numeros[0] + numeros[2])*/
 
-//Usamos LENGTH como atributo
+//Usamos LENGTH como atributo, indica la longitud del arreglo. 
 /*const nombres = ["ornella", "martin", "andres", "marlon"]; 
 
 for(let index = 0; index < nombres.length; index++){
@@ -74,16 +74,16 @@ eliminarPersona("lucas")*/
     { id: 2, nombre: "gorra", precio: 700},
     { id: 3, nombre: "pantalon", precio: 500},
     { id: 4, nombre: "zapatos", precio: 800},
-];
+];*/
 
 //FORMA MAS OPTIMA
-for(const item of productos){
+/*for(const item of productos){
     console.log(item.nombre);
     console.log(item.precio);
 }*/
 
-/* OTRA FORMA
-for(let index = 0; index < productos.length; index++) {
+//OTRA FORMA
+/*for(let index = 0; index < productos.length; index++) {
     const element = productos[index];
     console.log(element);
 }*/
@@ -101,6 +101,6 @@ const productos = [
     new Producto(2, "gorra", 700),
 ];
 
-console.log(productos);
-*/
+console.log(productos);*/
+
 
