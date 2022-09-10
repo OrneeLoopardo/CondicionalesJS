@@ -23,6 +23,9 @@ function agregarValores(impuesto, descuento){
         case "-":
             return this.valor - this.valor * 0.5;
             break;
+        default:
+            return "operación no válida";
+            break;
     }
 }
 
