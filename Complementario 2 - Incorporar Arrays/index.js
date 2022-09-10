@@ -1,25 +1,36 @@
-// SIMULADOR INTERACTIVO
-//creo la clase constructor
-class Producto{
-    constructor (nombre, valor){
+class Producto {
+    constructor(id, nombre, precio, impuesto, descuento) {
+        this.id = id;
         this.nombre = nombre;
+        this.precio = precio;
         this.valor = valor;
     }
-    //aca van los descuentos y el impuesto para el valor del producto 1, se agrega un mensaje para ser llamado en la funcion.
-    descuento (){
-        this.valor = this.valor - this.valor * 0.1;
-    }
-    impuesto (){
-        this.valor = this.valor + this.valor * 0.21;
-    }
-    mensaje (){
-        return 'nombre: ' + this.nombre + " valor: " + this.valor;
+    
+}
+
+const productos = [];
+productos.push(new Producto(1, "Sedal", 300 ));
+productos.push(new Producto(2, "Plusbell", 150 ));
+productos.push(new Producto(3, "Fructis", 500 ));
+productos.push(new Producto(4, "Pantene", 350 ));
+console.log(productos);
+
+function agregarValores(impuesto, descuento){
+    switch(impuesto, descuento){
+        case "+":
+            return this.valor + this.valor * 0.21;
+            break;
+        case "-":
+            return this.valor - this.valor * 0.5;
+            break;
     }
 }
 
-//defino los valores del constructor. Aplico los impuestos y descuentos al producto.
-const producto = new Producto();
-producto.impuesto();
-producto.descuento();
-console.log(producto.mensaje());
-
+for (let index = 0; index < 501; index++) {
+    let productos = agregarValores(productos, prompt('INGRESAR NOMBRE DE PRODUCTO'));
+    if(productos != undefined){
+        alert('ID '+busqueda.id+' NOMBRE '+busqueda.nombre+' PRECIO '+busqueda.precio);
+    }else{
+        alert('NO EXISTE PRODUCTO CON ESE NOMBRE');
+    }
+}
