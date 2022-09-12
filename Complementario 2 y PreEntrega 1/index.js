@@ -1,39 +1,13 @@
-class Producto {
-    constructor(id, nombre, precio, valor) {
-        this.id = id;
-        this.nombre = nombre;
-        this.precio = precio;
-        this.valor = valor;
+const producto = [
+    {nombre: 'plusbelle', valor: 150},
+    {nombre: 'suave', valor: 250},
+    {nombre: 'pantene', valor: 350},
+    {nombre: 'sedal', valor: 500}
+]
+const valor=producto.map((el)=>{
+    return{
+        nombre:el.nombre,
+        valor:el.valor + el.valor * 0.21 - el.valor * 0.5
     }
-    
-}
-
-const productos = [];
-productos.push(new Producto(1, "Sedal", 300 ));
-productos.push(new Producto(2, "Plusbell", 150 ));
-productos.push(new Producto(3, "Fructis", 500 ));
-productos.push(new Producto(4, "Pantene", 350 ));
-console.log(productos);
-
-function agregarValores(impuesto, descuento){
-    switch(impuesto, descuento){
-        case "+":
-            return this.valor + this.valor * 0.21;
-            break;
-        case "-":
-            return this.valor - this.valor * 0.5;
-            break;
-        default:
-            return "operación no válida";
-            break;
-    }
-}
-
-for (let index = 0; index < 501; index++) {
-    let productos = agregarValores(productos, prompt('INGRESAR NOMBRE DE PRODUCTO'));
-    if(productos != undefined){
-        alert('ID '+busqueda.id+' NOMBRE '+busqueda.nombre+' PRECIO '+busqueda.precio);
-    }else{
-        alert('NO EXISTE PRODUCTO CON ESE NOMBRE');
-    }
-}
+})
+console.log(valor)
