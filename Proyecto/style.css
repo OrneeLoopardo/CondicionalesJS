@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background: rgb(219,238,254);
+    background: linear-gradient(180deg, rgba(219,238,254,1) 4%, rgba(97,183,249,1) 50%, rgba(31,71,137,1) 92%);
+    font-size: 16px;
+}
+
+/* grid para estructura del sitio */
+.grid-container{
+    display: grid;
+    grid-template-areas: "encabezado"
+                         "intro"
+                         "tips"
+                         "video"
+                         "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 1vh;
+    align-items: center;
+    
+}
+
+/* flexbox para menú */
+#encabezado{
+    grid-area: encabezado;
+}
+
+#encabezado{
+    display: flex;
+    top: 0.1px;
+    z-index: 2;
+    left: 33%;
+    opacity: 85%;
+    justify-content: space-between;
+    color: black;
+}
+
+#encabezado .logo a{
+    width: auto;
+    height: auto;
+}
+
+#encabezado .navbar-nav{
+    gap: 10px;
+}
+
+#encabezado .navbar-nav .navbarra{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#encabezado .navbar-nav .navbarra:hover {
+    color: rgb(0, 0, 102);
+  }
+
+#encabezado .navbar-nav .dropdown-item {
+    font-weight: 900;
+  }
+
+/* CONTACTO contacto.html */
+
+#contacto{
+    background-image: url(#);
+    min-height: 15.625em;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#contacto .contactotit{
+    text-align: center;
+    background-color: rgba(5, 5, 7, 0.253);
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+}
+
+#contactoform{
+    /*background-color: #B2EDE3;*/
+    margin-bottom: 10px;
+}
+
+#formulariobot{
+    text-decoration: #ffff;
+    padding-bottom: 10px;
+}
+#formulariobot .botones-del-formulario{
+    display: grid;
+    grid-template-areas:"btn btn-primary btn btn-secondary";
+    grid-template-columns: 10rem 10rem;
+}
+
+/* FOOTER */
+
+#footer{
+    grid-area: footer;
+    background-color: black;
+}
+
+#footer{
+    color: white;
+    padding: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+#footer .iconos a{
+    width: 1vh;
+    padding: 1vh;
+    margin: 0 1vh;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    display: inline-flex;
+}
+
+#footer .texto{
+    text-align:justify;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
