@@ -11,9 +11,3 @@ const respuesta = () =>{
 };
 
 boton1.addEventListener("click", respuesta);
-/*
-function alerta(){
-    var arreglo = datos();
-    alert(`Su nombre es ${arreglo[0]}, su apellido ${arreglo[1]} y su edad ${arreglo[2]}`);
-}
-boton1.onclick = alerta;*/

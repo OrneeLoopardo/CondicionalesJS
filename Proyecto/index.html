@@ -1,18 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto</title>
+    <meta name="keywords" content="viajes, vuelos, trenes, barcos, micros, exterior, disfrutar, viajar, travel, contactate, asesoria, experiencia">
+    <meta name="description" content="Vas a poder indicarnos lo que estas buscando para que podamos aecuarnos a tus gustos. No te vamos a fallar.">
+    <link rel="shortcut icon" href="./img/solo logo.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/048d940dea.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
+  <div>
+    <!-- MENÚ ENCABEZADO -->
+    <Header id="encabezado">
+
+      <!-- LOGO -->
+      <div class="logo">
+          <a href="./index.html"><img src="#" alt="logo marymar" width="150"></a>
+      </div>
+
+      <!-- MENÚ DE NAVEGACIÓN -->
+      <nav class="navbar navbar-expand-sm navbar-dark">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="navbarra" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="navbarra" href="./ofrecemos.html">¿Que ofrecemos?</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="navbarra" href="./paquetes.html">Paquetes</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="navbarra" href="./quienes.html">¿Quienes somos?</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="navbarra" href="./contacto.html">Contactanos</a>
+                  </li>
+              </ul>
+          </div>
+    </nav>
+    </Header>
+    <!-- TITULO -->
+    <section id="contacto"> 
+      <div class="contactotit">
+        <h1>Contacto</h1>
+        <p>Contactate y empeza a viajar desde tu casa.</p>
+      </div>
+    </section>
+    <!--FORMULARIO-->
     <form action="" name="formulario" id="formulario">
-        <input type="text" id="texto1" name="texto1" value="" placeholder="nombre">
-        <input type="text" id="texto2"  value="" placeholder="apellido">
-        <input type="text" id="texto3"  value="" placeholder="edad">
-        <button type="button" id="boton1">Enviar</button>
-        <button type="reset" id="boton2">Eliminar</button>
-        <script src="./index.js"></script>
+      <input type="text" id="texto1" name="texto1" value="" placeholder="Nombre">
+      <input type="text" id="texto2"  value="" placeholder="Apellido">
+      <input type="text" id="texto3"  value="" placeholder="Edad">
+      <button type="button" id="boton1">Enviar</button>
+      <button type="reset" id="boton2">Eliminar</button>
+    <!-- FOOTER -->
+    <div id="footer"> 
+      <div class="iconos">
+          <a href="https://www.facebook.com/marymarviajesyturismo"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://wa.me/1167415844/?text= Hola! Somos Marta y Mariana. Preguntanos."><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/marymarviajes/"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    <footer class="texto">
+        <p>Copyright © MarYMar Viajes y Turismo 2022</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>      
+  </div>
+    <script src="./index.js"></script>
 </body>
 </html>
