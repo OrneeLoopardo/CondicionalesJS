@@ -5,9 +5,12 @@ function datos(){
     var arreglo = [uno, dos, tres];
     return arreglo;
 }
+
 const respuesta = () =>{
-    var arreglo = datos();
-    console.log(`su nombre es ${arreglo[0]}, su apellido ${arreglo[1]} y su edad ${arreglo[2]}`);
+const enJSON = JSON.stringify(new datos());
+
+localStorage.setItem("datos", enJSON);
+console.log(enJSON);
 };
 
 boton1.addEventListener("click", respuesta);
