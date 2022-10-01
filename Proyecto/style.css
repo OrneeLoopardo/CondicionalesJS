@@ -16,8 +16,8 @@ body{
     display: grid;
     grid-template-areas: "encabezado"
                          "intro"
-                         "tips"
-                         "video"
+                         "paquetes"
+                         "formulario"
                          "footer";
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto;
@@ -87,6 +87,75 @@ body{
     color: rgb(255, 255, 255);
     border-radius: 7px;
 }
+
+#iniciopaq .iniciopaq2{
+    display: grid;
+    grid-template-areas:"card1 card2 card3"
+                         "card1-img-top card2-img-top card3-img-top"
+                         "card1-body card2-body card3-body";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1vh;
+    align-items: start;
+    justify-content: space-evenly;
+    justify-items: stretch;
+    padding: 1vh;
+}
+
+.card1{
+    grid-area: card1;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.card1-img-top{
+    grid-area: card1-img-top;
+    height: 13.75rem;
+    width: auto;
+}
+
+.card1-body{
+    grid-area: card1-body;
+    text-align: start;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.card2{
+    grid-area: card2;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.card2-img-top{
+    grid-area: card2-img-top;
+    height: 13.75rem;
+    width: auto;
+}
+
+.card2-body{
+    grid-area: card2-body;
+    text-align: start;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.card3{
+    grid-area: card3;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.card3-img-top{
+    grid-area: card3-img-top;
+    height: 13.75rem;
+    width: auto;
+}
+
+.card3-body{
+    grid-area: card3-body;
+    text-align: start;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
 
 /* FOOTER */
 
