@@ -13,8 +13,6 @@ localStorage.setItem("datos", enJSON);
 console.log(enJSON);
 };
 
-boton1.addEventListener("click", respuesta);
-
 boton1.addEventListener("click", () => {
     Swal.fire({
       position: "center",
@@ -24,8 +22,6 @@ boton1.addEventListener("click", () => {
       timer: 5000,
     });
 });
-
-boton2.addEventListener("click", respuesta);
 
 boton2.addEventListener("click", () => {
     Swal.fire({
