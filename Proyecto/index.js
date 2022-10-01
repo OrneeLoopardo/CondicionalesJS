@@ -14,3 +14,25 @@ console.log(enJSON);
 };
 
 boton1.addEventListener("click", respuesta);
+
+boton1.addEventListener("click", () => {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Sus datos han sido enviados",
+      showConfirmButton: false,
+      timer: 5000,
+    });
+});
+
+boton2.addEventListener("click", respuesta);
+
+boton2.addEventListener("click", () => {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Sus datos han sido eliminados",
+      showConfirmButton: false,
+      timer: 5000,
+    });
+});
