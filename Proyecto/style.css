@@ -68,7 +68,7 @@ body{
 /* CONTACTO contacto.html */
 
 #contacto{
-    background-image: url(#);
+    background-image: url(./Imagenes/playa.jpg);
     min-height: 15.625em;
     background-attachment: fixed;
     background-size: cover;
