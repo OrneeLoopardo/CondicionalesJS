@@ -35,10 +35,21 @@ button1.addEventListener("click", () => {
 });
 
 //CONECTAR AL STORAGE
+function datos(){
+  var uno = document.getElementsByClassName("message-text1").value;
+  var dos = document.getElementsByClassName("message-text2").value;
+  var tres = document.getElementsByClassName("message-text3").value;
+  
+    var arreglo = [uno, dos, tres];
+    return arreglo;
+}
+
 const respuesta = () =>{
   const enJSON = JSON.stringify(new datos());
   
   localStorage.setItem("datos", enJSON);
   console.log(enJSON);
 };
+
+button2.addEventListener("click",respuesta)
   
