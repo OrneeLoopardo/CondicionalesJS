@@ -1,16 +1,16 @@
 //MODAL PARA EL FORMULARIO
-const exampleModal = document.getElementById('exampleModal')
-exampleModal.addEventListener('show.bs.modal', event => {
+const exampleModal = document.getElementById("exampleModal");
+exampleModal.addEventListener("show.bs.modal", (event) => {
   // BOTON QUE ACTIVA EL MODAL
-  const button = event.relatedTarget
+  const button = event.relatedTarget;
 
-  const recipient = button.getAttribute('data-bs-whatever')
+  const recipient = button.getAttribute("data-bs-whatever");
 
-  const modalTitle = exampleModal.querySelector('.modal-title')
-  const modalBodyInput = exampleModal.querySelector('.modal-body input')
+  const modalTitle = exampleModal.querySelector(".modal-title");
+  const modalBodyInput = exampleModal.querySelector(".modal-body input");
 
-  modalTitle.textContent = `Contactate a ${recipient}`
-  modalBodyInput.value = recipient
+  modalTitle.textContent = `Contactate a ${recipient}`;
+  modalBodyInput.value = recipient;
 });
 
 //SWEET ALERT
@@ -35,21 +35,21 @@ button1.addEventListener("click", () => {
 });
 
 //CONECTAR AL STORAGE
-function datos(){
-  var uno = document.getElementsByClassName("message-text1").value;
-  var dos = document.getElementsByClassName("message-text2").value;
-  var tres = document.getElementsByClassName("message-text3").value;
-  
-    var arreglo = [uno, dos, tres];
-    return arreglo;
+function datos() {
+  let uno = document.getElementById("message-text1").value;
+  let dos = document.getElementById("message-text2").value;
+  let tres = document.getElementById("message-text3").value;
+  console.log(uno, dos, tres);
+  let arreglo = [uno, dos, tres];
+  console.log(arreglo);
+  return arreglo;
 }
 
-const respuesta = () =>{
-  const enJSON = JSON.stringify(new datos());
-  
+const respuesta = () => {
+  const enJSON = JSON.stringify(datos());
+
   localStorage.setItem("datos", enJSON);
   console.log(enJSON);
 };
 
-button2.addEventListener("click",respuesta)
-  
+button2.addEventListener("click", respuesta);
