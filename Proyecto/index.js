@@ -1,3 +1,22 @@
+// PRUEBA FETCH
+/*fetch("https://reqres.in/api/users",{
+  method: "POST", 
+  headers: {
+    "Content-Type" : "appication/json"
+  },
+  body: JSON.stringify ({
+    name: "Usuario 1"
+  })
+}).then(res => {
+  if (res.ok) {
+    console.log("Success")
+  } else {
+    console.log("Not successful")
+  }
+})
+.then(data =>console.log(data))
+.catch(error => console.log("ERROR"))*/ 
+
 //MODAL PARA EL FORMULARIO
 const exampleModal = document.getElementById("exampleModal");
 exampleModal.addEventListener("show.bs.modal", (event) => {
